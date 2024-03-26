@@ -157,9 +157,7 @@ def get_summary(model, input_size) :
 
     
 #unit test
-
-
-model = Session9Net()
-input_tensor = torch.randn(1, 3, 224, 224)  
-output_tensor = model(input_tensor)
-print(output_tensor.shape)
+# model = Session9Net()
+# input_tensor = torch.randn(1, 3, 224, 224)  
+# output_tensor = model(input_tensor)
+# print(output_tensor.shape)
