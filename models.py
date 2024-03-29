@@ -150,6 +150,16 @@ class Session9Net(nn.Module):
 
     
 def get_summary(model, input_size) :       
+    """
+    Generate a summary of the given model.
+
+    Args:
+        model (torch.nn.Module): The neural network model.
+        input_size (tuple): The input size of the model, typically in the format (batch_size, channels, height, width).
+
+    Returns:
+        str: A summary of the model architecture including details such as layer types, output shape, and number of parameters.
+    """
     use_cuda = torch.cuda.is_available()
     device = torch.device("cuda" if use_cuda else "cpu")
     network = model.to(device)
